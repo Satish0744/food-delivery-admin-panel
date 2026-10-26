@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  @apply bg-gray-50 text-slate-900;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+.admin-container {
+  @apply p-4 sm:p-6 lg:p-8;
+}
+
+.card-ui {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-secondary transition-all duration-200 active:scale-95;
+}
+
+.btn-outline {
+  @apply border border-gray-300 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200;
+}
+
+.btn-danger {
+  @apply bg-danger text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-600 transition-all duration-200 active:scale-95;
+}
+
+.input-ui {
+  @apply w-full px-3 py-2 border border-gray-300 bg-white text-slate-900 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition placeholder-gray-400;
+}
+
+.label-ui {
+  @apply text-xs font-semibold text-gray-600 uppercase tracking-wide mb-1.5 block;
+}
+
+.table-header {
+  @apply bg-gray-50 text-xs font-bold text-gray-600 uppercase tracking-wider px-4 py-3 text-left;
+}
+
+.table-cell {
+  @apply px-4 py-3 text-sm text-gray-800 border-t border-gray-100;
+}
